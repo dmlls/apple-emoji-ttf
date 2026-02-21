@@ -31,7 +31,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build Linux font
-        run: python convert.py --target linux --ppem 160 --output output/AppleColorEmoji-Linux.ttf
+        run: python convert.py --ppem 160 --target linux --output output/AppleColorEmoji-Linux.ttf
 
       - name: Build Windows font
         run: python convert.py --target windows --output output/AppleColorEmoji-Windows.ttf
